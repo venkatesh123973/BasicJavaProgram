@@ -1,5 +1,6 @@
-//public class derivedstatic extends basestatic {
-//
+public class derivedstatic extends basestatic {
+
+
 //    // Static is removed here (Causes Compiler Error)
 //    public void display()
 //    {
@@ -24,3 +25,4 @@
 //        st.fun();
 //    }
 //}
+}

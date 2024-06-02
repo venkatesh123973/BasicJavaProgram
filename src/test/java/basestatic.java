@@ -1,5 +1,8 @@
 public class basestatic {
 
+    public basestatic(){
+        System.out.println("c is running");
+    }
     public static void display()
     {
         System.out.println(
@@ -17,4 +20,6 @@ public class basestatic {
     private void fun() {
         System.out.println("Base fun");
     }
+
+
 }
