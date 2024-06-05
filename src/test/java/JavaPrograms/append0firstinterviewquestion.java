@@ -21,7 +21,6 @@ public class append0firstinterviewquestion {
 
 
          }
-
          for(Integer output:num){
              System.out.println(output);
          }
