@@ -1,9 +1,8 @@
+package OTPScenarios;
+
 import com.mailosaur.MailosaurClient;
 import com.mailosaur.MailosaurException;
-import com.mailosaur.models.Link;
-import com.mailosaur.models.Message;
-import com.mailosaur.models.MessageSearchParams;
-import com.mailosaur.models.SearchCriteria;
+import com.mailosaur.models.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,7 +23,7 @@ public class OTP_Validation {
         params.withServer(serverId);
 
         SearchCriteria criteria = new SearchCriteria();
-        criteria.withSentTo("spite-hungry@" + serverDomain);
+        criteria.withSentTo("test-possible@" + serverDomain);
 
         Message message = mailosaur.messages().get(params, criteria);
         System.out.println(message.subject());
@@ -39,7 +38,13 @@ public class OTP_Validation {
        Link firstLink = message.html().links().get(0);
        System.out.println(firstLink.text()); // "Google Search"
        System.out.println(firstLink.href()); // "https://www.google.com/"
-
+      //check attachments from email
+        System.out.println(message.attachments().size()); // 2
+        Attachment firstAttachment = message.attachments().get(0);
+        System.out.println(firstAttachment.fileName()); // "contract.pdf"
+        System.out.println(firstAttachment.contentType()); // "application/pdf"
+        Attachment firstAttachment1 = message.attachments().get(0);
+        System.out.println(firstAttachment1.length()); // 4028
 
         Assert.assertNotNull(message);
         Assert.assertEquals("Testing for Email Alert", message.subject());
