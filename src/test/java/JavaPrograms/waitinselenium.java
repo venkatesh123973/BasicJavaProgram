@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.*;
 import java.time.Duration;
 import java.util.function.Function;
 
-public class waitinselenium {
+public class  waitinselenium {
 
     public static void main(String[] args) {
 

@@ -3,10 +3,10 @@ package JavaPrograms;
 public class interviewquestion {
 
     public static void main(String[] args) {
-//
-//        System.out.println("A"+"B"+'A');
-//        System.out.println('A'+"B"+'A');
-//        System.out.println(1+"B"+'A');
+
+        System.out.println("A"+"B"+'A');
+        System.out.println('A'+"B"+'A');
+        System.out.println(1+"B"+'A');
 
         String str1 = "hello";
         String str2 = "hello";

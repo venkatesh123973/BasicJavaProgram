@@ -13,6 +13,8 @@ public class reduce {
         int resu=number.stream().reduce(0,(sum,ele)->sum+ele);
         System.out.println(resu);
 
+
+
         Optional<Integer> num3=number.stream().reduce((num1, num2)->Math.min(num1,num2));
         System.out.println(num3.get());
 
