@@ -22,18 +22,18 @@ public class countword {
             }
         }
 
-        for (Map.Entry<String, Integer> X : map.entrySet()) {
-            if (X.getValue()==1) {
-                System.out.println(X.getKey());
-            }
-
-//
-//            for (String X1 : map.keySet()) {
-//
-//                System.out.println(X1 + ":" + map.get(X1));
+//        for (Map.Entry<String, Integer> X : map.entrySet()) {
+//            if (X.getValue()==1) {
+//                System.out.println(X.getKey());
 //            }
 
 
-        }}
+            for (String X1 : map.keySet()) {
+
+                System.out.println(X1 + ":" + map.get(X1));
+            }
+
+
+        }
 
     }

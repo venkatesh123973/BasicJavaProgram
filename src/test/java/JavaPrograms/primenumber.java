@@ -28,7 +28,7 @@ public class primenumber {
     @Test
     public void givennumberisprimeornot(){
 
-        int number = 6;
+        int number = 3;
         boolean isPrime = true;
         // Check if the number is divisible by any number other than 1 and itself
         for (int i = 2; i <= Math.sqrt(number); i++) {

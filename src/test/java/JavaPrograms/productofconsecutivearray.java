@@ -1,5 +1,7 @@
 package JavaPrograms;
 
+import java.util.Arrays;
+
 public class productofconsecutivearray {
 
     public static void main(String[] args) {
@@ -7,6 +9,8 @@ public class productofconsecutivearray {
         int num[] = {1,2,3,4};
       int length= num.length;
       int prod =1;
+
+        Arrays.stream(num).map(num1->num1*num1).forEach(System.out::println);
 
       for(int i=0;i<length-1;i++){
 
