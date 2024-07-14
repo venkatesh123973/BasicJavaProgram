@@ -10,13 +10,15 @@ public class reduce {
     public static void main (String[] args){
 
         List<Integer> number= Arrays.asList(1,2,3,4);
-        int resu=number.stream().reduce(0,(sum,ele)->sum+ele);
+        int resu=number.stream().reduce(1,(sum,ele)->sum*ele);
         System.out.println(resu);
 
 
 
         Optional<Integer> num3=number.stream().reduce((num1, num2)->Math.min(num1,num2));
         System.out.println(num3.get());
+
+
 
         List<String> name1= Arrays.asList("tiger","cow","ox");
         boolean res2=name1.stream().anyMatch(str->str.equals("tiger"));

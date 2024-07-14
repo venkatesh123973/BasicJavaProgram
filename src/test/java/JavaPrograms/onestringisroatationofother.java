@@ -7,7 +7,7 @@ public class onestringisroatationofother {
             return false;
         }
         String concatenated = s1 + s1;
-        return concatenated.contains(s2);
+         return concatenated.contains(s2);
     }
 
     public static void main(String[] args) {

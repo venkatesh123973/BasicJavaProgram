@@ -21,11 +21,11 @@ public class duplicatecharacter {
             map.put(arr[i],map.get(arr[i])+1);
         }
     }
-        System.out.println(map);
+//        System.out.println(map);
         for(Character X: map.keySet()){
-            if(map.get(X)==1){
+//            if(map.get(X)==1){
                 System.out.println(X +" " +map.get(X));
-            }
+//            }
         }
     }
 
