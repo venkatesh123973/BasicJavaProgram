@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+
     <listeners>
         <listener class-name="Listeners.Iannotationtransformer"></listener>
     </listeners>
-    <test name ="Testing" verbose="2" preserve-order="true">
+    <test name ="Testing">
+        <parameter name="browser" value="chrome"></parameter>
     <classes>
-        <class name="Listeners.priority">
+        <class name="singelton.loginTest">
         </class>
     </classes>
+    </test>
+
+    <test name ="Testingtwo">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="singelton.loginTest">
+            </class>
+        </classes>
     </test>
 </suite>
