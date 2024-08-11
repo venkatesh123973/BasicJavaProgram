@@ -10,7 +10,9 @@ public class WebDriverManager {
     private static WebDriverManager instance;
     private static ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
     private WebDriverManager(){
-
+     if(instance!=null){
+         throw new IllegalArgumentException("Object already created");  // to prevent reflection attacks
+     }
     }
 
     public void initwebDriver(String browser){
